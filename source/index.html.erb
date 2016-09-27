@@ -4,28 +4,20 @@ title: MATTER
 
 <div class='wrapper'>
 
-
   <div id='left-column' class='column'>
     <div class='rotated-container'>
-      <div class='marquee'>
+      <div class='marquee-fast'>
         <div>
-          Matter
+          <span>Welcome</span>&nbsp;&nbsp;&nbsp;<%= image_tag 'aetna.png', height: '32' %>
         </div>
-        <!-- TODO Work these back into the left marquee
-        <span id='matter-large'>Matter</span>
-        <span id='matter-multiples'>Matter&nbsp;Matter&nbsp;Matter&nbsp;Matter&nbsp;Matter&nbsp;Matter&nbsp;</span>
-        <span id='matter-medium'>Matter</span>
-        -->
-      </div>
     </div>
-
   </div>
 
   <div id='middle-column' class='column'>
     <div class='rotated-container'>
-      <div class='tales-marquee'>
+      <div class='marquee-slow'>
         <div>
-          Tales from the Trenches
+          <span>Welcome</span>&nbsp;&nbsp;&nbsp;<%= image_tag 'aetna.png', height: '32' %>
         </div>
       </div>
     </div>
@@ -33,11 +25,17 @@ title: MATTER
 
   <div id='right-column' class='column'>
     <div class='rotated-container'>
+      <div class='marquee'>
+        <div>
+          Matter Matter
+        </div>
+      </div>
+      <!--
       <div class='presented-by-marquee'>
         <span>Presented by</span>
-        <%= image_tag 'pritzker-group-logo-white.png', height: '28' %>
-        <%= image_tag 'context-media-logo-white.png', height: '40' %>
+        <%#= image_tag 'aetna.png', height: '28' %>
       </div>
+      -->
     </div>
   </div>
 </div>

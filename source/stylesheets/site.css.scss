@@ -17,7 +17,8 @@
 }
 
 body {
-  background: #000;
+  /*background: #000;*/
+  background: #fff;
   color: #fff;
   font-family: 'Nexa Book', Helvetica, Arial;
 }
@@ -39,12 +40,18 @@ body {
   //border: 1px dotted #292929;
 }
 
+#left-column, #middle-column {
+  background-color: #fff;
+}
+
 #middle-column {
-  left: 100px;
+  left: 108px;
 }
 
 #right-column {
-  left: 200px;
+  background: #000;
+  left: 215px;
+  padding-left: 52px;
 }
 
 .rotated-container {
@@ -104,14 +111,14 @@ body {
   100% { left: -100%; }
 }
 
-.tales-marquee {
+.marquee-fast {
   height: 157px;
   position: relative;
   width: 1400px;
   -webkit-transform:translateX(50%);
 }
 
-.tales-marquee div {
+.marquee-fast div {
   // background-color: rgba(3, 244, 98, .7);
   bottom: -2px;
   display: block;
@@ -119,13 +126,47 @@ body {
   font-size: 41px;
   overflow: hidden;
   position: relative;
+  padding-top: 17px;
   /*text-transform: uppercase;*/
 
-  -webkit-animation: marquee 14s linear infinite;
-  -moz-animation: marquee 14s linear infinite;
-  -ms-animation: marquee 14s linear infinite;
-  -o-animation: marquee 14s linear infinite;
-  animation: marquee 14s linear infinite;
+  -webkit-animation: marquee 9s linear infinite;
+  -moz-animation: marquee 9s linear infinite;
+  -ms-animation: marquee 9s linear infinite;
+  -o-animation: marquee 9s linear infinite;
+  animation: marquee 9s linear infinite;
+}
+
+.marquee-fast div span {
+  color: #000;
+}
+
+.marquee-slow {
+  height: 157px;
+  position: relative;
+  width: 1400px;
+  -webkit-transform:translateX(50%);
+}
+
+.marquee-slow div {
+  // background-color: rgba(3, 244, 98, .7);
+  bottom: -2px;
+  display: block;
+  font-family: 'Nexa Book';
+  font-size: 41px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 5px;
+  /*text-transform: uppercase;*/
+
+  -webkit-animation: marquee 12s linear infinite;
+  -moz-animation: marquee 12s linear infinite;
+  -ms-animation: marquee 12s linear infinite;
+  -o-animation: marquee 12s linear infinite;
+  animation: marquee 12s linear infinite;
+}
+
+.marquee-slow div span {
+  color: #000;
 }
 
 @-webkit-keyframes marquee {
