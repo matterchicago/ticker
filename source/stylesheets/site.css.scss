@@ -126,6 +126,7 @@ body {
   font-size: 41px;
   overflow: hidden;
   position: relative;
+  padding-top: 17px;
   /*text-transform: uppercase;*/
 
   -webkit-animation: marquee 9s linear infinite;
@@ -133,6 +134,10 @@ body {
   -ms-animation: marquee 9s linear infinite;
   -o-animation: marquee 9s linear infinite;
   animation: marquee 9s linear infinite;
+}
+
+.marquee-fast div span {
+  color: #000;
 }
 
 .marquee-slow {
@@ -150,6 +155,7 @@ body {
   font-size: 41px;
   overflow: hidden;
   position: relative;
+  padding-top: 5px;
   /*text-transform: uppercase;*/
 
   -webkit-animation: marquee 12s linear infinite;
@@ -157,6 +163,10 @@ body {
   -ms-animation: marquee 12s linear infinite;
   -o-animation: marquee 12s linear infinite;
   animation: marquee 12s linear infinite;
+}
+
+.marquee-slow div span {
+  color: #000;
 }
 
 @-webkit-keyframes marquee {
