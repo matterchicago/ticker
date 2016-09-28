@@ -4,9 +4,13 @@ module Parser
 
   FILE = "data/companies.json"
 
-  def self.get_data(company_name)
+  def self.get_data(entity_name)
     hash = to_hash(FILE)
-    return hash[company_name]
+    if hash.keys.include? entity_name
+      return hash[entity_name]
+    else
+      raise "No data for entity " + entity_name
+    end
   end
 
   def self.to_hash(json_file)
