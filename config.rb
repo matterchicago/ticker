@@ -1,3 +1,5 @@
+require 'lib/parser'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -8,6 +10,8 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+page "/index.html", :locals => { :company => Parser.get_data("aetna") }
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -22,17 +26,6 @@ page '/*.txt', layout: false
 configure :development do
   activate :livereload
 end
-
-###
-# Helpers
-###
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 # Build-specific configuration
 configure :build do
