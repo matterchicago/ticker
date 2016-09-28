@@ -1,6 +1,6 @@
 require 'lib/parser'
 
-ENTITY_NAME = ENV["entity"] ||= "default"
+ENTITY_NAME = ENV["ENTITY"] ||= "default"
 
 ###
 # Page options, layouts, aliases and proxies
