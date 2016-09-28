@@ -6,7 +6,7 @@ module Parser
 
   def self.get_data(entity_name)
     hash = to_hash(FILE)
-    if hash.keys.include? entity_name
+    if hash.keys.include?(entity_name)
       return hash[entity_name]
     else
       raise "No data for entity " + entity_name
