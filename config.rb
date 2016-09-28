@@ -1,5 +1,7 @@
 require 'lib/parser'
 
+ENTITY_NAME = ENV["entity"] ||= "default"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -11,7 +13,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-page "/index.html", :locals => { :company => Parser.get_data("aetna") }
+page "/index.html", :locals => { :company => Parser.get_data(ENTITY_NAME) }
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
