@@ -13,7 +13,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-page "/index.html", :locals => { :company => Parser.get_data(ENTITY_NAME) }
+page "/index.html", :locals => { :entity => Parser.get_data(ENTITY_NAME) }
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout

@@ -2,7 +2,7 @@ require 'json'
 
 module Parser
 
-  FILE = "data/companies.json"
+  FILE = "data/entities.json"
 
   def self.get_data(entity_name)
     hash = to_hash(FILE)
