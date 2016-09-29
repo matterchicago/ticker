@@ -1,3 +1,7 @@
+require 'lib/parser'
+
+ENTITY_NAME = ENV["ENTITY"] ||= "default"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -8,6 +12,8 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+page "/index.html", :locals => { :entity => Parser.get_data(ENTITY_NAME) }
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
