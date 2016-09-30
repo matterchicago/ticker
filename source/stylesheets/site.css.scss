@@ -247,6 +247,39 @@ body {
   margin-left: 65px;
 }
 
+.gridlines-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.ductwork {
+  position: absolute;
+  top: 47px;
+  width: 100%;
+  border: 0;
+  border-top: 2px solid orange;
+}
+
+.grid-col {
+  position: absolute;
+  height: 900px;
+  width: 61px;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+}
+
+.grid-col-left {
+  left: 30px;
+}
+
+.grid-col-mid {
+  left: 119px;
+}
+
+.grid-col-right {
+  left: 144px;
+}
+
 /*
 
 span#matter-large {
