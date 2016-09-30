@@ -252,12 +252,39 @@ body {
   width: 100%;
 }
 
-.ductwork {
+.gridline {
   position: absolute;
+  width: 1;
+  height: 500;
+  border: 0;
+  border-left: 2px solid orange;
+}
+
+.ductwork {
   top: 48px;
   width: 100%;
   border: 0;
   border-top: 2px solid orange;
+}
+
+.grid-col {
+  position: absolute;
+  height: 900px;
+  width: 64px;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+}
+
+.grid-col-left {
+  left: 30px;
+}
+
+.grid-col-mid {
+  left: 115px;
+}
+
+.grid-col-right {
+  left: 146px;
 }
 
 /*
