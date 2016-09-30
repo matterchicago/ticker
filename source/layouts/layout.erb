@@ -18,5 +18,8 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <% if development? %>
+      <%= partial "gridlines" %>
+    <% end %>
   </body>
 </html>

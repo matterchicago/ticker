@@ -30,15 +30,6 @@ body {
   width: 600px;
 }
 
-.ductwork {
-  position: absolute;
-  top: 48px;
-  z-index: 1;
-  width: 100%;
-  border: 0;
-  border-top: 2px solid orange;
-}
-
 .column {
   height: 900px;
   position: absolute;
@@ -254,6 +245,19 @@ body {
 
 .presented-by-marquee img {
   margin-left: 65px;
+}
+
+.gridlines-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.ductwork {
+  position: absolute;
+  top: 48px;
+  width: 100%;
+  border: 0;
+  border-top: 2px solid orange;
 }
 
 /*
