@@ -252,15 +252,8 @@ body {
   width: 100%;
 }
 
-.gridline {
-  position: absolute;
-  width: 1;
-  height: 500;
-  border: 0;
-  border-left: 2px solid orange;
-}
-
 .ductwork {
+  position: absolute;
   top: 47px;
   width: 100%;
   border: 0;
