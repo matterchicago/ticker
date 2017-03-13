@@ -42,14 +42,14 @@
 }
 
 #column-left {
-  background: #fff;
+  background: #000;
   position: absolute;
   height: 900px;
   width: 100px;
 }
 
 #column-middle {
-  background: #fff;
+  background: #000;
   position: absolute;
   height: 900px;
   width: 115px;
@@ -149,7 +149,7 @@
 
 
 .scroll-left11 {
-  background: #fff;
+  background: #000;
 	white-space: nowrap;
 	position: absolute;
   bottom: 78px;
@@ -193,7 +193,7 @@
 span.welcome {
   font-family: "Nexa Light";
   font-size: 40px;
-  color: #489cd4;
+  color: #fff;
 }
 
 /* Move it (define the animation) */
