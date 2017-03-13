@@ -65,7 +65,7 @@
 .scroll-left4 {
 	white-space: nowrap;
 	position: absolute;
-  bottom: 196px;
+  bottom: 185px;
 	width: 100%;
 	margin: 0px;
 	line-height: 100%;
@@ -153,7 +153,7 @@
 	white-space: nowrap;
 	position: absolute;
   bottom: 78px;
-	width: 100%;
+	width: 450%;
 	margin: 0px;
 	line-height: 100%;
 	text-align: center;
@@ -165,9 +165,9 @@
 	-webkit-transform:translateX(100%);	
 	transform:translateX(100%);
 	/* Apply animation to this element */	
-	-moz-animation: scroll-left 11s linear infinite;
-	-webkit-animation: scroll-left 11s linear infinite;
-	animation: scroll-left 11s linear infinite;
+	-moz-animation: scroll-left 22s linear infinite;
+	-webkit-animation: scroll-left 22s linear infinite;
+	animation: scroll-left 22s linear infinite;
 }
 
 .scroll-left14 {
